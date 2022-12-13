@@ -1,0 +1,70 @@
+.App {
+  display: grid;
+  grid-template-rows: min-content auto;
+  grid-template-columns: 250px auto;
+  height: 100vh;
+  overflow: scroll;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffb6c1;
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 141, 216, 1) 0%,
+    rgba(241, 143, 222, 1) 51%,
+    rgba(255, 0, 200, 1) 100%
+  );
+  color: white;
+  grid-column: 1 / span 2;
+  padding: 10px 5px;
+}
+
+form {
+  padding: 10px;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form input,
+form textarea {
+  margin-bottom: 10px;
+  width: 300px;
+}
+
+nav,
+article {
+  height: 100%;
+  padding: 10px;
+}
+
+nav {
+  background-color: rgb(254, 197, 235, 1);
+}
+
+nav p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+article .date {
+  font-style: italic;
+}
+
+article .body {
+  white-space: break-spaces;
+}
+button {
+  color: black;
+  
+}
+
+.error {
+  background-color: hotpink;
+  color: white;
+  padding: 5px;
+}
